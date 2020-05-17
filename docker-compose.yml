@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  minecraft:
+    container_name: minecraft
+    image: itzg/minecraft-server
+    ports:
+      - '25565:25565'
+    tty: true
+    restart: always
+    volumes:
+      - './server_data:/data'
+    environment:
+      EULA: 'true'
+      ENABLE_RCON: "true"
+      VERSION: "LATEST"
+      TZ: "Asia/Tokyo"
+      TYPE: "SPIGOT"
