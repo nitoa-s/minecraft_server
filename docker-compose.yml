@@ -12,7 +12,7 @@ services:
       - './server_data:/data'
     environment:
       EULA: 'true'
-      ENABLE_RCON: "true"
+      ENABLE_RCON: 'true'
       VERSION: "LATEST"
       TZ: "Asia/Tokyo"
       TYPE: "SPIGOT"
