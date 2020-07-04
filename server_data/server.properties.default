@@ -1,0 +1,87 @@
+#Minecraft server properties
+#Sat Jul 04 21:08:33 JST 2020
+# スポーン保護の範囲
+spawn-protection=16
+# 何らかの障害が発生してからサーバーを停止するまでの時間
+max-tick-time=60000
+# ???
+query.port=25565
+# ワールドカスタマイズの設定
+generator-settings=
+# 特定のサーバーでは同期モード以外でも開けます
+sync-chunk-writes=true
+# ログイン時のゲームモード設定(true:propertiesで設定されているゲームモード, false:ログアウト時のゲームモード)
+force-gamemode=false
+# ネザーへ行けるかどうかの設定(true:行くことができる, false:ネザーポータルが動作せず、行くことができない)
+allow-nether=true
+# ホワイトリストを適用するかどうか?
+enforce-whitelist=false
+# ゲームモード(creative:クリエイティブ, survival:サバイバル, adventure:アドベンチャー, spectator:スペクテイター)
+gamemode=survival
+# コンソールやコマンドブロックからのコマンド実行の結果をOPに表示するか
+broadcast-console-to-ops=true
+# サーバーに関する情報を取得するかどうか
+enable-query=false
+player-idle-timeout=0
+# 難易度(peaceful:ピースフル, easy:イージー, nomal:ノーマル, hard:ハード)
+difficulty=easy
+# rconからのコマンド実行の結果をOPに表示するか
+broadcast-rcon-to-ops=true
+# モンスターをスポーンさせるかどうか
+spawn-monsters=true
+# OP権限におけるコマンド等の使用度合いを設定
+op-permission-level=4
+# PVP設定
+pvp=true
+
+entity-broadcast-range-percentage=100
+snooper-enabled=true
+# マップの種類を設定
+level-type=default
+# クライアントからのステータスリクエストへの返信を抑制するかどうか(true:抑制しない, false:抑制する)
+enable-status=true
+# ハードコアにするかどうか
+hardcore=false
+# コマンドブロックの使用許可
+enable-command-block=true
+network-compression-threshold=256
+# プレイヤー参加人数の上限
+max-players=20
+# ワールドサイズの上限
+max-world-size=29999984
+resource-pack-sha1=
+function-permission-level=2
+# rconのポート
+rcon.port=25575
+# サーバーのポート
+server-port=25565
+# デバック許可
+debug=false
+texture-pack=
+server-ip=
+# 村人等のNPCのスポーン設定
+spawn-npcs=true
+allow-flight=false
+# ワールド名
+level-name=world
+view-distance=10
+resource-pack=
+# 動物をスポーンさせるかどうか
+spawn-animals=true
+# ホワイトリストを使用するかどうか
+white-list=false
+# rconのパスワード
+rcon.password=minecraft
+# 建造物の生成設定
+generate-structures=true
+online-mode=true
+# 最高度の上限
+max-build-height=256
+# シード値
+level-seed=
+use-native-transport=true
+prevent-proxy-connections=false
+enable-jmx-monitoring=false
+motd=A Spigot Minecraft Server powered by Docker
+# rconの使用許可設定
+enable-rcon=true
