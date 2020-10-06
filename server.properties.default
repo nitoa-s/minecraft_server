@@ -2,7 +2,7 @@
 #Sat Jul 04 21:08:33 JST 2020
 # スポーン保護の範囲
 spawn-protection=16
-# 何らかの障害が発生してからサーバーを停止するまでの時間
+# # 何らかの障害が発生してからサーバーを停止するまでの時間(単位：ms)
 max-tick-time=60000
 # ???
 query.port=25565
@@ -10,7 +10,7 @@ query.port=25565
 generator-settings=
 # 特定のサーバーでは同期モード以外でも開けます
 sync-chunk-writes=true
-# ログイン時のゲームモード設定(true:propertiesで設定されているゲームモード, false:ログアウト時のゲームモード)
+# ログイン時のゲームモード設定(true:'gamemode'で設定されているゲームモード, false:ログアウト時のゲームモード)
 force-gamemode=false
 # ネザーへ行けるかどうかの設定(true:行くことができる, false:ネザーポータルが動作せず、行くことができない)
 allow-nether=true
@@ -33,8 +33,9 @@ spawn-monsters=true
 op-permission-level=4
 # PVP設定
 pvp=true
-
+# エンティティがどの程度近くにいる場合にクライアントに送信するかを制御する。値を高くするほど遠くから描画され、ラグが発生する可能性がある。これはデフォルト値の割合で表される。
 entity-broadcast-range-percentage=100
+# サーバーが定期的にsnoopデータをhttp://snoop.minecraft.netに送信するかどうかを設定する
 snooper-enabled=true
 # マップの種類を設定
 level-type=default
@@ -47,7 +48,7 @@ enable-command-block=true
 network-compression-threshold=256
 # プレイヤー参加人数の上限
 max-players=20
-# ワールドサイズの上限
+# ワールドサイズの上限(1000にすると、2000×2000のワールドが生成される)
 max-world-size=29999984
 resource-pack-sha1=
 function-permission-level=2
